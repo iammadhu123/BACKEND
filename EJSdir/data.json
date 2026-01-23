@@ -1,0 +1,46 @@
+{
+  "cats": {
+    "id": 1,
+    "username": "cats_01",
+    "name": "Cat",
+    "bio": "Believe in yourself ✨",
+    "followers": 1200,
+    "following": 300,
+    "profileImage": "https://randomuser.me/api/portraits/women/45.jpg",
+    "posts": [
+      {
+        "id": 101,
+        "image": "https://images.unsplash.com/photo-1501973801540-537f08ccae7b",
+        "likes": 340,
+        "comments": 45,
+        "caption": "Sunset vibes 🌇"
+      },
+      {
+        "id": 102,
+        "image": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131",
+        "likes": 512,
+        "comments": 78,
+        "caption": "Cat life 😸"
+      }
+    ]
+  },
+
+  "dogs": {
+    "id": 2,
+    "username": "dogs_07",
+    "name": "Dog",
+    "bio": "Loyal | Friendly 🐶",
+    "followers": 2200,
+    "following": 900,
+    "profileImage": "https://randomuser.me/api/portraits/men/32.jpg",
+    "posts": [
+      {
+        "id": 201,
+        "image": "https://images.unsplash.com/photo-1507149833265-60c372daea22",
+        "likes": 890,
+        "comments": 120,
+        "caption": "Morning walk 🐾"
+      }
+    ]
+  }
+}

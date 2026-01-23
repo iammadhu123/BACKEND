@@ -20,6 +20,47 @@ app.get("/hello", (req, res) => {
     res.send("hello");
 })
 
+app.use(express.static("public"));
+
+
+// app.get("/ig/:username", (req, res) => {
+//     const { username } = req.params;
+//     const instaData = require("./data.json");
+//     const data = instaData[username];
+
+//     console.log(data);
+
+//     if (!data) {
+//         return res.render("error.ejs"); // stop here
+//     }
+
+//     return res.render("instagram.ejs", { data }); // only one response
+// }); OR
+
+app.get("/ig/:username", (req, res) => {
+    const { username } = req.params;
+    const instaData = require("./data.json");
+    const data = instaData[username];
+
+    console.log(data);
+
+    if (data) {
+        return res.render("instagram.ejs", { data });
+    } else {
+        return res.render("error.ejs");
+    }
+});
+
+
+
+
+app.get("/rolldice", (req, res) => {
+    let diceVal = Math.floor( Math.random() * 6) + 1;
+    // res.send("Your rolled number is " + diceVal);
+    // res.render("rolldice.ejs", { num: diceVal});
+    res.render("rolldice.ejs", {diceVal});
+});
+
 //res.render will render ejs file
 
 
